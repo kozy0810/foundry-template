@@ -1,0 +1,5 @@
+solmate/=lib/solmate/src/
+ds-test/=lib/ds-test/src/
+forge-std/=lib/forge-std/src/
+solidity-stringutils/=lib/solidity-stringutils/
+forge-gas-snapshot/=lib/forge-gas-snapshot/src/
