@@ -1,28 +1,33 @@
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
 
 [profile.default]
-evm_version = "cancun"
-ffi = true
-fs_permissions = [
-	{ access = "read-write", path = ".gas-snapshots.md" },
-	{ access = "read-write", path = ".forge-snapshots/" },
-	{ access = "read", path = "./out" },
-]
-libs = [
-	"lib",
-]
-out = "out"
-script = 'script'
-solc = "0.8.26"
-src = "src"
-test = 'test'
+	evm_version = "cancun"
+	ffi = true
+	fs_permissions = [
+		{ access = "read-write", path = ".gas-snapshots.md" },
+		{ access = "read-write", path = ".forge-snapshots/" },
+		{ access = "read", path = "./out" },
+	]
+	libs = [
+		"dependencies",
+	]
+	out = "out"
+	script = 'script'
+	solc = "0.8.26"
+	src = "src"
+	test = 'test'
 
 [fuzz]
-runs = 1000
-seed = '0x3e8'
+	runs = 1000
+	seed = '0x3e8'
 
 [rpc_endpoints]
-mainnet = "${RPC_MAINNET}"
+	mainnet = "${RPC_MAINNET}"
 
 [etherscan]
-mainnet = { key = "${ETHERSCAN_MAINNET_KEY}" }
+	mainnet = { key = "${ETHERSCAN_MAINNET_KEY}" }
+
+[dependencies]
+	"@openzeppelin-contracts" = "5.1.0"
+	forge-std = "1.9.4"
+	forge-gas-snapshot = "0.0.4"
