@@ -1,5 +1,7 @@
-solmate/=lib/solmate/src/
+@openzeppelin-contracts/=dependencies/@openzeppelin-contracts-5.1.0/
 ds-test/=lib/ds-test/src/
-forge-std/=lib/forge-std/src/
-solidity-stringutils/=lib/solidity-stringutils/
-forge-gas-snapshot/=lib/forge-gas-snapshot/src/
+forge-gas-snapshot-0.0.4/=dependencies/forge-gas-snapshot-0.0.4/
+forge-std-1.9.4/=dependencies/forge-std-1.9.4/
+script/=script/
+src/=src/
+test/=test/
